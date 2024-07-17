@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Seja Bem-Vindo!</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link href="/Css/index.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<body>
+  <header>
+    <!-------- NAVBAR ------------>
+    <nav class='navbar navbar-expand-lg bg-primary navbar-dark'>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><strong>Bricks Coffee</strong></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Cardápio</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <main>
+    <!------ FORMULARIO ------------>
+    <div class="container">
+      <form class="row mt-5">
+        <div class="col-12 mb-0">
+          <label for="staticEmail2" class="visually-hidden">nome</label>
+          <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="Nome:">
+        </div>
+        <div class="col-auto mb-3">
+          <label for="nome" class="visually-hidden">nome</label>
+          <input type="text" class="form-control" id="nome" placeholder="Digite seu nome">
+        </div>
+        <div class="col-4 mx-0">
+          <button type="submit" class="btn btn-primary" onclick="mensagem(event)">Bem-Vindo</button>
+        </div>
+      </form>
+
+
+      <!----- ALERT ------>
+      <div class="row">
+        <div class="col-auto mt-4" id="boasVindas"></div>
+      </div>
+    </div>
+  </main>
+
+
+
+  <footer class="fixed-bottom bg-primary text-light text-align-inline">
+    <br>
+    <div class="container">
+      <div class="text-center align-middle">
+        <ul class="list-group-item d-flex justify-content-between align-items-center">
+          <li class="list-inline-item"> Bricks Coffee </li>
+          <li class="list-inline-item"> Endereço: Guarabira-PB </li>
+          <li class="list-inline-item"> Membros: João e Maria </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container">
+      <hr>
+      <div class="row d-flex justify-content-center">
+        <div class="text-center">
+          <ul class="list-unstyled list-inline">
+            <li class="list-inline-item">
+              <i class="bi bi-facebook"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="bi bi-twitter"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="bi bi-instagram"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="bi bi-whatsapp"></i>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="/Js/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
